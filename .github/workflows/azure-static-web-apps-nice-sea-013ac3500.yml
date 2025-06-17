@@ -41,6 +41,7 @@ jobs:
           app_location: "/"      # thư mục gốc có index.html
           api_location: ""       # không có API
           output_location: "."   # thư mục chứa index.html
+          skip_app_build: true
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
